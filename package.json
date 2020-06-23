@@ -2,7 +2,7 @@
   "name": "@renatomattos2912/mycli",
   "version": "0.1.1",
   "description": "My CLI to start projects",
-  "main": "src/index.js",
+  "main": "./src/index.js",
   "scripts": {
     "pub": "np"
   },
@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/renatomattos2912/mycli#readme",
   "bin": {
-    "mycli": "src/index.js"
+    "mycli": "./bin/global.js"
   },
   "preferGlobal": true,
   "dependencies": {
