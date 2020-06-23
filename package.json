@@ -1,0 +1,31 @@
+{
+  "name": "@renatomattos2912/mycli",
+  "version": "0.1.0",
+  "description": "My CLI to start projects",
+  "main": "src/index.js",
+  "scripts": {
+    "pub": "np",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/renatomattos2912/mycli.git"
+  },
+  "author": "Renato Mattos <rmn2912developer@protonmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/renatomattos2912/mycli/issues"
+  },
+  "homepage": "https://github.com/renatomattos2912/mycli#readme",
+  "bin": {
+    "mycli": "src/index.js"
+  },
+  "preferGlobal": true,
+  "dependencies": {
+    "minimist": "^1.2.5",
+    "plop": "^2.7.1"
+  },
+  "devDependencies": {
+    "np": "^6.2.4"
+  }
+}
