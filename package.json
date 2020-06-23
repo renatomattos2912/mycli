@@ -4,8 +4,7 @@
   "description": "My CLI to start projects",
   "main": "src/index.js",
   "scripts": {
-    "pub": "np",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "pub": "np"
   },
   "repository": {
     "type": "git",
