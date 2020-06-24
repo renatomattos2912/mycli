@@ -1,31 +1,9 @@
 module.exports = function (plop) {
-  plop.setGenerator("Create Use Case", {
-    description: "Generate an Use Case",
-    prompts: [
-      {
-        type: "input",
-        name: "module",
-        message: "What is the Module name?",
-      },
-      {
-        type: "input",
-        name: "name",
-        message: "What is the Use Case name?",
-      },
-    ],
-    actions: [
-      {
-        type: "add",
-        path:
-          "src/app/modules/{{module}}/{{pascalCase name}}/use-cases/{{pascalCase name}}Controller.ts",
-        templateFile: ".dev/plop/use-case/controller.hbs",
-      },
-      {
-        type: "add",
-        path:
-          "src/app/modules/{{module}}/{{name}}/use-cases/{{name}}UseCase.ts",
-        templateFile: ".dev/plop/use-case/useCase.hbs",
-      },
-    ],
-  });
+  // Helpers
+  const H_CWD = require('./helpers/cwd');
+  plop.setHelper('cwd', H_CWD);
+
+  // Generators
+  const G_USE_CASE_CREATE = require('./generators/use-case/create');
+  plop.setGenerator('Use Case: Create', G_USE_CASE_CREATE);
 };
