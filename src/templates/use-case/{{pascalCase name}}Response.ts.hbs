@@ -1,0 +1,9 @@
+import { {{pascalCase name}}Errors } from './{{pascalCase name}}Errors';
+import { Result } from '~/app/shared/core/Result';
+import { Either } from '~/app/shared/core/Either';
+import { AppError } from '~/app/shared/core/AppError';
+
+export type {{pascalCase name}}Response = Either<
+  {{pascalCase name}}Errors.NotFoundError | AppError.UnexpectedError,
+  Result<any>
+>;

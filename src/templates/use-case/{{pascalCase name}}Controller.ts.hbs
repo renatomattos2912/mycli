@@ -1,0 +1,33 @@
+import { {{pascalCase name}}UseCase } from './{{pascalCase name}}UseCase';
+import { {{pascalCase name}}Response as Response } from './{{pascalCase name}}Response';
+import { {{pascalCase name}}Request as Request } from './{{pascalCase name}}Request';
+import { BaseController } from '~/app/shared/core/BaseController';
+import { ControllerResponse } from '~/app/shared/core/ControllerResponse';
+
+export class {{pascalCase name}}Controller extends BaseController {
+  private useCase: {{pascalCase name}}UseCase;
+
+  constructor(useCase: {{pascalCase name}}UseCase) {
+    super();
+    this.useCase = useCase;
+  }
+
+  async executeImpl(req: Request): Promise<ControllerResponse<Response>> {
+    try {
+      const result = await this.useCase.execute(req);
+
+      if (result.isLeft()) {
+        const error = result.value;
+
+        switch (error.constructor) {
+          default:
+            return this.fail(error.errorValue());
+        }
+      } else {
+        return this.ok<Response>(result.value.getValue());
+      }
+    } catch (err) {
+      return this.fail(err);
+    }
+  }
+}

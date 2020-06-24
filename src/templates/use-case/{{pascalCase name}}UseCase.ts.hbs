@@ -1,0 +1,17 @@
+import { {{pascalCase name}}Response as Response } from './{{pascalCase name}}Response';
+import { {{pascalCase name}}Request as Request } from './{{pascalCase name}}Request';
+import { UseCase } from '~/app/shared/core/UseCase';
+import { Result } from '~/app/shared/core/Result';
+import { left, right } from '~/app/shared/core/Either';
+import { AppError } from '~/app/shared/core/AppError';
+
+export class {{pascalCase name}}UseCase implements UseCase<Request, Response> {
+  public async execute(req: Request): Promise<Response> {
+    try {
+      // todo: implement some logic to return
+      return right(Result.ok<any>());
+    } catch (err) {
+      return left(new AppError.UnexpectedError(err));
+    }
+  }
+}

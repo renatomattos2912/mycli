@@ -16,7 +16,7 @@ module.exports = {
     {
       type: 'addMany',
       destination:
-        '{{cwd}}/src/app/modules/{{module}}/{{pascalCase name}}/use-cases/',
+        '{{cwd}}/src/app/modules/{{module}}/use-cases/{{pascalCase name}}',
       templateFiles: 'templates/use-case/**/*.hbs',
     },
   ],
