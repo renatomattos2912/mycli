@@ -27,6 +27,7 @@ module.exports = {
       type: 'addMany',
       destination: '{{cwd}}/{{project_name}}',
       templateFiles: 'templates/nuxt/**/*',
+      base: 'templates/nuxt/',
       globOptions: {
         dot: true,
       },

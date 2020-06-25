@@ -1,5 +1,5 @@
 # @name sampleCall
-POST {{$dotenv API_BASE_URL}}/sample-api
+POST https://sample/api
 Content-Type: application/json
 
 {
