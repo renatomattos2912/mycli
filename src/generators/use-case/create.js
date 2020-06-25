@@ -18,6 +18,7 @@ module.exports = {
       destination:
         '{{cwd}}/src/app/modules/{{module}}/use-cases/{{pascalCase name}}',
       templateFiles: 'templates/use-case/**/*.hbs',
+      base: 'templates/use-case/',
     },
   ],
 };
