@@ -1,6 +1,7 @@
 # MyCLI
 
-> PS: Work in progress [It is not production ready, so be careful]
+> --> **WARNING** <--<br>
+> Work in progress!<br> > **[It is not production ready, so be careful]**
 
 MyCLI is made to help you to start projects fast, just choose what you want and MyCLI will give you a good start point based on some opinionated best practices like DDD and Clean Code, and after you get you project bootstraped, you can use MyCLI to add new things too, like modules, services, components ...
 
@@ -32,12 +33,12 @@ Done =)
 
 ## Special thanks
 
-Without help of this great projects, this tool may not be possible.
+Without the help of these great projects, this tool would not be possible.
 
-[Plop](https://plopjs.com/)
-[np](https://github.com/sindresorhus/np#readme)
-[Minimist](https://github.com/substack/minimist)
-[NodeJS](https://nodejs.org/en/)
-[VSCode](https://code.visualstudio.com/)
-[Github](https://github.com/)
-[NPM](https://www.npmjs.com/)
+- [Plop](https://plopjs.com/)
+- [np](https://github.com/sindresorhus/np#readme)
+- [Minimist](https://github.com/substack/minimist)
+- [NodeJS](https://nodejs.org/en/)
+- [VSCode](https://code.visualstudio.com/)
+- [Github](https://github.com/)
+- [NPM](https://www.npmjs.com/)
