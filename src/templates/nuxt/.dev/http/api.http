@@ -1,0 +1,10 @@
+# @name sampleCall
+POST {{$dotenv API_BASE_URL}}/sample-api
+Content-Type: application/json
+
+{
+  "hello": "hi"
+}
+
+###
+
