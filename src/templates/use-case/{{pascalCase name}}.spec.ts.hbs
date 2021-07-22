@@ -1,0 +1,19 @@
+import { {{camelCase name}}UseCase } from '.';
+
+describe('Use Case: {{pascalCase module}}/{{pascalCase name}}UseCase', () => {
+  beforeAll(() => {});
+
+  test('My first test', async () => {
+    //TODO: put your logic
+    const req: any = {}
+
+    const res = await {{camelCase name}}UseCase.execute(req);
+
+    expect(res.isRight()).toBe(true);
+    expect(res.value.getValue()).toBeDefined();
+
+    if (res.isRight()) {
+      expect(res.value.getValue()).toBe('something');
+    }
+  });
+});

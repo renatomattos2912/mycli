@@ -1,9 +1,7 @@
 import { {{pascalCase name}}UseCase } from './{{pascalCase name}}UseCase';
-import { {{pascalCase name}}Controller } from './{{pascalCase name}}Controller';
+
+//TODO: import dependencies here
 
 const {{camelCase name}}UseCase = new {{pascalCase name}}UseCase();
-const {{camelCase name}}Controller = new {{pascalCase name}}Controller(
-  {{camelCase name}}UseCase
-);
 
-export { {{camelCase name}}Controller, {{camelCase name}}UseCase };
+export { {{camelCase name}}UseCase };

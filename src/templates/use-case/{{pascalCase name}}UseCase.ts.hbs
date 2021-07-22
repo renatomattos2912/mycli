@@ -1,17 +1,31 @@
-import { {{pascalCase name}}Response as Response } from './{{pascalCase name}}Response';
-import { {{pascalCase name}}Request as Request } from './{{pascalCase name}}Request';
-import { UseCase } from '~/app/shared/core/UseCase';
-import { Result } from '~/app/shared/core/Result';
-import { left, right } from '~/app/shared/core/Either';
-import { AppError } from '~/app/shared/core/AppError';
+import { {{pascalCase name}}DTO } from './{{pascalCase name}}DTO';
+import { UseCase } from '@/app/core/base/UseCase';
+import { Result } from '@/app/core/base/Result';
+import { left, right } from '@/app/core/base/Either';
+import { AppError } from '@/app/core/base/AppError';
 
-export class {{pascalCase name}}UseCase implements UseCase<Request, Response> {
-  public async execute(req: Request): Promise<Response> {
+export class {{pascalCase name}}UseCase
+  implements UseCase<{{pascalCase name}}DTO.Request, {{pascalCase name}}DTO.Response>
+{
+  // TODO: Import your services here
+  // private service: IService;
+
+  // constructor(service: IService) {
+  //  this.service = service;
+  // }
+
+  public async execute(
+    req: {{pascalCase name}}DTO.Request
+  ): Promise<{{pascalCase name}}DTO.Response> {
     try {
-      // todo: implement some logic to return
-      return right(Result.ok<any>());
+      // TODO: Put your logic here
+      // const call: ServiceDTO.Method.Output = await this.service.method(queryInput);
+      // const res: {{pascalCase name}}DTO.ResponseBody = call;
+
+      // return right(Result.ok<{{pascalCase name}}DTO.ResponseBody>(res));
     } catch (err) {
       return left(new AppError.UnexpectedError(err));
     }
   }
 }
+

@@ -1,5 +1,5 @@
-import { UseCaseError } from '~/app/shared/core/UseCaseError';
-import { Result } from '~/app/shared/core/Result';
+import { UseCaseError } from '@/app/core/base/UseCaseError';
+import { Result } from '@/app/core/base/Result';
 
 export namespace {{pascalCase name}}Errors {
   export class NotFoundError extends Result<UseCaseError> {
