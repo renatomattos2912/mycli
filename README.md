@@ -7,8 +7,13 @@ MyCLI is made to help you to start projects fast, just choose what you want and 
 
 ## Install
 
-Install globally
+Install globally or use npx to run without install.<br>
 
+In case of npx, use command bellow:
+
+```bash
+npx @renatomattos2912/mycli
+```
 ### NPM
 
 ```bash
